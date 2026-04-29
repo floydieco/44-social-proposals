@@ -88,6 +88,25 @@ section{padding:130px 64px;position:relative}
 .cta:hover{background:var(--amber);color:var(--bg1)}
 .cta.cta-filled{background:var(--amber);border-color:var(--amber);color:var(--bg1)}
 .cta.cta-filled:hover{background:var(--amber-hover);border-color:var(--amber-hover);color:var(--bg1)}
+.example-section{margin-top:90px}
+.example-label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);margin-bottom:12px;text-align:center}
+.example-heading{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,4.5vw,56px);line-height:.96;letter-spacing:-.01em;color:var(--text);text-align:center;margin-bottom:18px}
+.example-heading .accent{font-family:'Instrument Serif',serif;font-style:italic;color:var(--amber);font-weight:400}
+.example-sub{color:var(--muted);font-size:15px;line-height:1.7;text-align:center;max-width:640px;margin:0 auto 60px}
+.example-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.example-card{background:var(--bg3);border:1px solid var(--border);overflow:hidden}
+.example-card.featured{background:var(--bg2);border:1px solid var(--amber-border)}
+.example-header{padding:24px 32px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.example-pack-name{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber)}
+.example-pack-total{font-family:'Bebas Neue',sans-serif;font-size:18px;color:var(--amber);letter-spacing:.05em}
+.example-row{display:grid;grid-template-columns:1fr 70px;gap:16px;padding:18px 32px;border-bottom:1px solid var(--border);align-items:center}
+.example-row:last-of-type{border-bottom:none}
+.example-row.row-total{background:rgba(200,160,112,0.06);border-top:1px solid var(--amber-line);border-bottom:none}
+.example-deliverable{color:var(--text);font-size:14.5px;line-height:1.5}
+.example-row.row-total .example-deliverable{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);font-weight:500}
+.example-credit{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--amber);text-align:right;letter-spacing:.02em;line-height:1}
+.example-row.row-total .example-credit{font-size:32px}
+.example-summary{padding:20px 32px;background:rgba(200,160,112,0.04);font-size:13px;color:var(--muted);line-height:1.6;font-style:italic;border-top:1px solid var(--border)}
 .why{background:var(--bg2)}
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
 .why-card{padding:36px 32px;border-left:2px solid var(--amber);background:var(--bg3)}
@@ -114,7 +133,7 @@ footer{background:var(--bg1);padding:100px 64px 0;border-top:1px solid var(--bor
 .footer-bottom{max-width:1400px;margin:0 auto;background:#261f1c;padding:28px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 .footer-copy{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--very-muted)}
 .confidential{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);background:var(--amber-dim);border:1px solid var(--amber-line);padding:8px 14px}
-@media(max-width:800px){.nav{padding:24px;flex-direction:column;gap:24px}.nav-meta{text-align:left}.hero-content{padding:40px 24px}.hero-stats{grid-template-columns:1fr;gap:24px}.stat{padding:16px 0;border-right:none;border-bottom:1px solid var(--border)}.stat:last-child{border-bottom:none}section{padding:80px 24px}.section-head{grid-template-columns:1fr;gap:32px;margin-bottom:56px}.gap-grid{grid-template-columns:1fr}.gap-card{padding:40px 28px}.approach-grid{grid-template-columns:1fr}.package-grid{grid-template-columns:1fr}.package{padding:40px 28px}.package-price{font-size:72px}.why-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr;gap:40px}.contact-info{padding:32px 24px}.info-row{grid-template-columns:1fr;gap:6px}footer{padding:60px 24px 0}.footer-grid{grid-template-columns:1fr;gap:40px;padding-bottom:40px}.footer-bottom{padding:20px 24px;flex-direction:column;align-items:flex-start}}
+@media(max-width:800px){.nav{padding:24px;flex-direction:column;gap:24px}.nav-meta{text-align:left}.hero-content{padding:40px 24px}.hero-stats{grid-template-columns:1fr;gap:24px}.stat{padding:16px 0;border-right:none;border-bottom:1px solid var(--border)}.stat:last-child{border-bottom:none}section{padding:80px 24px}.section-head{grid-template-columns:1fr;gap:32px;margin-bottom:56px}.gap-grid{grid-template-columns:1fr}.gap-card{padding:40px 28px}.approach-grid{grid-template-columns:1fr}.package-grid{grid-template-columns:1fr}.package{padding:40px 28px}.package-price{font-size:72px}.example-grid{grid-template-columns:1fr}.example-row{padding:16px 22px}.example-header{padding:20px 22px}.example-summary{padding:18px 22px}.why-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr;gap:40px}.contact-info{padding:32px 24px}.info-row{grid-template-columns:1fr;gap:6px}footer{padding:60px 24px 0}.footer-grid{grid-template-columns:1fr;gap:40px;padding-bottom:40px}.footer-bottom{padding:20px 24px;flex-direction:column;align-items:flex-start}}
 </style>
 </head>
 <body>
@@ -138,7 +157,7 @@ footer{background:var(--bg1);padding:100px 64px 0;border-top:1px solid var(--bor
     <p class="hero-desc">A monthly content production partnership. We make the content. Royal posts it. Designed to prove out what consistent monthly output can do for the brand.</p>
     <div class="hero-stats">
       <div class="stat"><div class="stat-value">$1,100+</div><div class="stat-label">Starting Investment</div></div>
-      <div class="stat"><div class="stat-value">5x</div><div class="stat-label">Anniversary Output</div></div>
+      <div class="stat"><div class="stat-value">12</div><div class="stat-label">Shoots Per Year</div></div>
       <div class="stat"><div class="stat-value">100%</div><div class="stat-label">Content Rights</div></div>
     </div>
   </div>
@@ -210,12 +229,11 @@ footer{background:var(--bg1);padding:100px 64px 0;border-top:1px solid var(--bor
         <div class="package-meta">Entry point · steady output</div>
         <div class="package-stats">
           <div class="package-stat"><div class="package-stat-value">8</div><div class="package-stat-label">Credits / Month</div></div>
-          <div class="package-stat"><div class="package-stat-value">2.5x</div><div class="package-stat-label">Anniversary Output</div></div>
+          <div class="package-stat"><div class="package-stat-value">4hr</div><div class="package-stat-label">Monthly Shoot</div></div>
         </div>
         <ul class="package-features">
           <li>8 production credits per month for video, photo, carousels, and graphics</li>
-          <li>Roughly 2.5x the production output of the 30th anniversary shoot</li>
-          <li>Monthly on-site shoot at Royal</li>
+          <li>Half-day on-site shoot at Royal each month</li>
           <li>Monthly strategy call with Floydie for posting guidance</li>
           <li>Suggested posting order, timing, and caption starters</li>
           <li>Royal's team handles all posting and engagement</li>
@@ -223,7 +241,7 @@ footer{background:var(--bg1);padding:100px 64px 0;border-top:1px solid var(--bor
           <li>Full content rights, no watermarks</li>
           <li>Dedicated account ownership</li>
         </ul>
-        <a class="cta" href="mailto:floydie@44social.co?subject=Royal%20has%20selected%20the%208%20Credit%20Pack&body=Royal%20Landscape%20Nursery%20has%20selected%20Option%20A%3A%208%20Credit%20Pack%20%E2%80%94%20%241%2C100%2Fmo%0AProduction%20Partnership%0A%0APACKAGE%20INCLUDES%3A%0A%0A-%208%20production%20credits%20per%20month%0A-%20Roughly%202.5x%20the%2030th%20anniversary%20output%0A-%20Monthly%20on-site%20shoot%20at%20Royal%0A-%20Monthly%20strategy%20call%20with%20Floydie%0A-%20Suggested%20posting%20order%2C%20timing%2C%20and%20caption%20starters%0A-%20Royal%27s%20team%20handles%20all%20posting%20and%20engagement%0A-%20Up%20to%2025%25%20of%20unused%20credits%20roll%20forward%0A-%20Full%20content%20rights%2C%20no%20watermarks%0A-%20Dedicated%20account%20ownership%0A%0A----%0ASent%20via%2044%20Social%20Proposal">Select This Pack</a>
+        <a class="cta" href="mailto:floydie@44social.co?subject=Royal%20has%20selected%20the%208%20Credit%20Pack&body=Royal%20Landscape%20Nursery%20has%20selected%20Option%20A%3A%208%20Credit%20Pack%20%E2%80%94%20%241%2C100%2Fmo%0AProduction%20Partnership%0A%0APACKAGE%20INCLUDES%3A%0A%0A-%208%20production%20credits%20per%20month%0A-%20Half-day%20on-site%20shoot%20at%20Royal%20each%20month%0A-%20Monthly%20strategy%20call%20with%20Floydie%0A-%20Suggested%20posting%20order%2C%20timing%2C%20and%20caption%20starters%0A-%20Royal%27s%20team%20handles%20all%20posting%20and%20engagement%0A-%20Up%20to%2025%25%20of%20unused%20credits%20roll%20forward%0A-%20Full%20content%20rights%2C%20no%20watermarks%0A-%20Dedicated%20account%20ownership%0A%0A----%0ASent%20via%2044%20Social%20Proposal">Select This Pack</a>
       </div>
 
       <div class="package featured">
@@ -232,27 +250,66 @@ footer{background:var(--bg1);padding:100px 64px 0;border-top:1px solid var(--bor
         <div class="package-price">$2,100</div>
         <div class="package-price-sub">per month · monthly billing</div>
         <h3>16 Credit Pack</h3>
-        <div class="package-meta">Best fit · 5x anniversary output</div>
+        <div class="package-meta">Best fit · full-day shoot</div>
         <div class="package-stats">
           <div class="package-stat"><div class="package-stat-value">16</div><div class="package-stat-label">Credits / Month</div></div>
-          <div class="package-stat"><div class="package-stat-value">5x</div><div class="package-stat-label">Anniversary Output</div></div>
+          <div class="package-stat"><div class="package-stat-value">8hr</div><div class="package-stat-label">Monthly Shoot</div></div>
         </div>
         <ul class="package-features">
           <li>16 production credits per month, 2x the 8 Credit Pack</li>
-          <li>Roughly 5x the production output of the 30th anniversary shoot, every month</li>
-          <li>Monthly on-site shoot at Royal</li>
+          <li>Full-day on-site shoot at Royal each month</li>
           <li>Room for more reels, more carousels, and seasonal campaigns</li>
           <li>Monthly strategy call with Floydie for posting guidance</li>
           <li>Suggested posting order, timing, and caption starters</li>
           <li>Royal's team handles all posting and engagement</li>
           <li>Up to 25% of unused credits roll forward</li>
           <li>Full content rights, no watermarks</li>
+          <li>Dedicated account ownership</li>
         </ul>
         <div class="package-note">Best fit for Royal given the audience size, brand maturity, and the residential pivot. Enough volume to actually move the algorithm.</div>
-        <a class="cta cta-filled" href="mailto:floydie@44social.co?subject=Royal%20has%20selected%20the%2016%20Credit%20Pack&body=Royal%20Landscape%20Nursery%20has%20selected%20Option%20B%3A%2016%20Credit%20Pack%20%E2%80%94%20%242%2C100%2Fmo%0AProduction%20Partnership%0A%0APACKAGE%20INCLUDES%3A%0A%0A-%2016%20production%20credits%20per%20month%20%282x%20the%208%20Credit%20Pack%29%0A-%20Roughly%205x%20the%2030th%20anniversary%20output%2C%20every%20month%0A-%20Monthly%20on-site%20shoot%20at%20Royal%0A-%20Room%20for%20more%20reels%2C%20more%20carousels%2C%20and%20seasonal%20campaigns%0A-%20Monthly%20strategy%20call%20with%20Floydie%0A-%20Suggested%20posting%20order%2C%20timing%2C%20and%20caption%20starters%0A-%20Royal%27s%20team%20handles%20all%20posting%20and%20engagement%0A-%20Up%20to%2025%25%20of%20unused%20credits%20roll%20forward%0A-%20Full%20content%20rights%2C%20no%20watermarks%0A-%20Dedicated%20account%20ownership%0A%0A----%0ASent%20via%2044%20Social%20Proposal">Select This Pack</a>
+        <a class="cta cta-filled" href="mailto:floydie@44social.co?subject=Royal%20has%20selected%20the%2016%20Credit%20Pack&body=Royal%20Landscape%20Nursery%20has%20selected%20Option%20B%3A%2016%20Credit%20Pack%20%E2%80%94%20%242%2C100%2Fmo%0AProduction%20Partnership%0A%0APACKAGE%20INCLUDES%3A%0A%0A-%2016%20production%20credits%20per%20month%20%282x%20the%208%20Credit%20Pack%29%0A-%20Full-day%20on-site%20shoot%20at%20Royal%20each%20month%0A-%20Room%20for%20more%20reels%2C%20more%20carousels%2C%20and%20seasonal%20campaigns%0A-%20Monthly%20strategy%20call%20with%20Floydie%0A-%20Suggested%20posting%20order%2C%20timing%2C%20and%20caption%20starters%0A-%20Royal%27s%20team%20handles%20all%20posting%20and%20engagement%0A-%20Up%20to%2025%25%20of%20unused%20credits%20roll%20forward%0A-%20Full%20content%20rights%2C%20no%20watermarks%0A-%20Dedicated%20account%20ownership%0A%0A----%0ASent%20via%2044%20Social%20Proposal">Select This Pack</a>
       </div>
 
     </div>
+
+    <div class="example-section">
+      <div class="example-label">Example Breakdown</div>
+      <h3 class="example-heading">A Sample <span class="accent">Month.</span></h3>
+      <p class="example-sub">Here's how a typical month of credits could be spent for each pack. Final mix is always Royal's call based on what the month needs.</p>
+
+      <div class="example-grid">
+
+        <div class="example-card">
+          <div class="example-header">
+            <div class="example-pack-name">8 Credit Pack · Option A</div>
+            <div class="example-pack-total">Total: 8 Credits</div>
+          </div>
+          <div class="example-row"><div class="example-deliverable">Half-day on-site shoot, 4 hours</div><div class="example-credit">4.0</div></div>
+          <div class="example-row"><div class="example-deliverable">2 short-form videos, 30 seconds each</div><div class="example-credit">2.0</div></div>
+          <div class="example-row"><div class="example-deliverable">1 short-form video, 60 seconds</div><div class="example-credit">1.25</div></div>
+          <div class="example-row"><div class="example-deliverable">1 short-form video, 30 seconds</div><div class="example-credit">0.75</div></div>
+          <div class="example-row row-total"><div class="example-deliverable">4 finished reels + raw selects</div><div class="example-credit">8.0</div></div>
+          <div class="example-summary">A focused half-day shoot turned into 4 finished reels for Royal to pace through the month.</div>
+        </div>
+
+        <div class="example-card featured">
+          <div class="example-header">
+            <div class="example-pack-name">16 Credit Pack · Option B</div>
+            <div class="example-pack-total">Total: 16 Credits</div>
+          </div>
+          <div class="example-row"><div class="example-deliverable">Full-day on-site shoot, 8 hours</div><div class="example-credit">8.0</div></div>
+          <div class="example-row"><div class="example-deliverable">2 short-form videos, 30 seconds each</div><div class="example-credit">2.0</div></div>
+          <div class="example-row"><div class="example-deliverable">Photo batch, 25 edited finals</div><div class="example-credit">1.0</div></div>
+          <div class="example-row"><div class="example-deliverable">2 short-form videos, 60 seconds each</div><div class="example-credit">2.5</div></div>
+          <div class="example-row"><div class="example-deliverable">Promotional carousel, up to 10 slides</div><div class="example-credit">1.5</div></div>
+          <div class="example-row"><div class="example-deliverable">1 short-form video, 30 seconds</div><div class="example-credit">1.0</div></div>
+          <div class="example-row row-total"><div class="example-deliverable">5 reels + carousel + 25 photos</div><div class="example-credit">16.0</div></div>
+          <div class="example-summary">A full shoot day expanded into 5 finished reels, a carousel, and 25 edited photos. Enough volume to actually drive 4 plus posts a week.</div>
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -264,7 +321,7 @@ footer{background:var(--bg1);padding:100px 64px 0;border-top:1px solid var(--bor
       <p class="intro-copy">This isn't a cold pitch. We've been on-site at Royal, met the team, and produced content your audience already responded to. Now we're proposing what comes next, on terms that fit how Royal already operates.</p>
     </div>
     <div class="why-grid">
-      <div class="why-card"><h3>You already know our work</h3><p>We produced the 30th anniversary content. The highest-performing reel on Royal's account is one of ours. Production Partnership is that, every month, at multiple times the volume.</p></div>
+      <div class="why-card"><h3>You already know our work</h3><p>We produced the 30th anniversary content. The highest-performing reel on Royal's account is one of ours. Production Partnership is that, every month, all year long.</p></div>
       <div class="why-card"><h3>Low risk, easy to evaluate</h3><p>You're not handing over accounts or changing existing relationships. You're adding a content engine. If the output isn't moving the needle, it's a clean stop.</p></div>
       <div class="why-card"><h3>Local team, fast turnaround</h3><p>Orlando-based. We can be on-site at Royal whenever the season calls for it. No waiting, no managing remote vendors.</p></div>
     </div>
@@ -301,6 +358,9 @@ footer{background:var(--bg1);padding:100px 64px 0;border-top:1px solid var(--bor
     <div class="confidential">Confidential · Royal Landscape Nursery</div>
   </div>
 </footer>
+
+</body>
+</html>
 
 </body>
 </html>
