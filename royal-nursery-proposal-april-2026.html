@@ -8,11 +8,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-:root{--bg1:#2c2724;--bg2:#322c29;--bg3:#38312d;--bg4:#3f3732;--red:#e8150a;--red-hover:#ff2a1f;--red-dim:rgba(232,21,10,0.10);--red-border:rgba(232,21,10,0.35);--amber:#c8a070;--amber-dim:rgba(200,160,112,0.13);--amber-line:rgba(200,160,112,0.28);--text:#f0ebe4;--muted:#a09488;--very-muted:#6a5e58;--white:#ffffff;--border:rgba(255,255,255,0.07)}
+:root{--bg1:#2c2724;--bg2:#322c29;--bg3:#38312d;--bg4:#3f3732;--amber:#c8a070;--amber-hover:#d8b182;--amber-dim:rgba(200,160,112,0.13);--amber-line:rgba(200,160,112,0.28);--amber-border:rgba(200,160,112,0.5);--text:#f0ebe4;--muted:#a09488;--very-muted:#6a5e58;--white:#ffffff;--border:rgba(255,255,255,0.07)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--bg1);color:var(--text);line-height:1.6;font-weight:400;overflow-x:hidden;position:relative}
-body::after{content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.45;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.35 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
 .label-row{display:flex;align-items:center;gap:14px;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);margin-bottom:28px}
 .label-row::before{content:"";width:32px;height:1px;background:var(--amber);opacity:.6}
 .hero{min-height:100vh;background:var(--bg1);position:relative;display:flex;flex-direction:column;overflow:hidden;border-bottom:1px solid var(--border)}
@@ -68,8 +67,8 @@ section{padding:130px 64px;position:relative}
 .packages{background:var(--bg1)}
 .package-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
 .package{background:var(--bg3);border:2px solid var(--border);padding:56px 48px;position:relative;display:flex;flex-direction:column}
-.package.featured{background:var(--bg2);border:2px solid var(--red-border)}
-.recommended-badge{position:absolute;top:-14px;right:32px;background:var(--red);color:var(--white);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;padding:8px 16px;font-weight:500}
+.package.featured{background:var(--bg2);border:2px solid var(--amber-border)}
+.recommended-badge{position:absolute;top:-14px;right:32px;background:var(--amber);color:var(--bg1);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;padding:8px 16px;font-weight:500}
 .package-option{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);margin-bottom:28px}
 .package-price{font-family:'Bebas Neue',sans-serif;font-size:92px;color:var(--amber);line-height:.95;margin-bottom:4px}
 .package-price-sub{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:28px}
@@ -87,8 +86,8 @@ section{padding:130px 64px;position:relative}
 .package-note{background:var(--amber-dim);border-left:2px solid var(--amber);padding:16px 20px;font-size:13.5px;color:var(--text);line-height:1.55;margin-bottom:28px;font-style:italic}
 .cta{display:inline-block;width:100%;text-align:center;padding:20px 32px;background:transparent;border:1px solid var(--amber);color:var(--amber);text-decoration:none;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;transition:all .25s ease}
 .cta:hover{background:var(--amber);color:var(--bg1)}
-.cta.cta-red{background:var(--red);border-color:var(--red);color:var(--white)}
-.cta.cta-red:hover{background:var(--red-hover);border-color:var(--red-hover)}
+.cta.cta-filled{background:var(--amber);border-color:var(--amber);color:var(--bg1)}
+.cta.cta-filled:hover{background:var(--amber-hover);border-color:var(--amber-hover);color:var(--bg1)}
 .why{background:var(--bg2)}
 .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
 .why-card{padding:36px 32px;border-left:2px solid var(--amber);background:var(--bg3)}
@@ -114,7 +113,7 @@ footer{background:var(--bg1);padding:100px 64px 0;border-top:1px solid var(--bor
 .footer-col li{color:var(--text);font-size:14.5px;line-height:1.5;padding:8px 0}
 .footer-bottom{max-width:1400px;margin:0 auto;background:#261f1c;padding:28px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
 .footer-copy{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--very-muted)}
-.confidential{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--red);background:var(--red-dim);border:1px solid var(--red-border);padding:8px 14px}
+.confidential{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--amber);background:var(--amber-dim);border:1px solid var(--amber-line);padding:8px 14px}
 @media(max-width:800px){.nav{padding:24px;flex-direction:column;gap:24px}.nav-meta{text-align:left}.hero-content{padding:40px 24px}.hero-stats{grid-template-columns:1fr;gap:24px}.stat{padding:16px 0;border-right:none;border-bottom:1px solid var(--border)}.stat:last-child{border-bottom:none}section{padding:80px 24px}.section-head{grid-template-columns:1fr;gap:32px;margin-bottom:56px}.gap-grid{grid-template-columns:1fr}.gap-card{padding:40px 28px}.approach-grid{grid-template-columns:1fr}.package-grid{grid-template-columns:1fr}.package{padding:40px 28px}.package-price{font-size:72px}.why-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr;gap:40px}.contact-info{padding:32px 24px}.info-row{grid-template-columns:1fr;gap:6px}footer{padding:60px 24px 0}.footer-grid{grid-template-columns:1fr;gap:40px;padding-bottom:40px}.footer-bottom{padding:20px 24px;flex-direction:column;align-items:flex-start}}
 </style>
 </head>
@@ -250,7 +249,7 @@ footer{background:var(--bg1);padding:100px 64px 0;border-top:1px solid var(--bor
           <li>Same package Armstrong Air & Electric runs with us</li>
         </ul>
         <div class="package-note">Best fit for Royal given the audience size, brand maturity, and 30-year story to keep telling.</div>
-        <a class="cta cta-red" href="mailto:floydie@44social.co?subject=Royal%20has%20selected%20Growth%20SMM&body=Royal%20Landscape%20Nursery%20has%20selected%20Option%20B%3A%20Growth%20SMM%20%E2%80%94%20%244%2C250%2Fmo%0A3-month%20initial%20term%0A%0APACKAGE%20INCLUDES%3A%0A%0A-%2020%20production%20credits%20per%20month%20%282x%20Starter%20output%29%0A-%204%20posts%20per%20week%20per%20platform%20%28Instagram%20%2B%20Facebook%29%0A-%205%20hours%2Fweek%20community%20management%0A-%20Monthly%20content%20calendar%20and%20strategy%0A-%20Posting%20and%20scheduling%20handled%20by%2044%20Social%0A-%20More%20room%20for%20reels%2C%20carousels%2C%20and%20seasonal%20campaigns%0A-%20Smart%20repurposing%20of%20new%20and%20archive%20content%0A-%20Monthly%20performance%20report%0A-%20Quarterly%20strategy%20review%0A-%20Dedicated%20account%20ownership%0A-%20Full%20Architects%20AI%20stack%20and%20client%20portal%20access%0A%0A----%0ASent%20via%2044%20Social%20Proposal">Select This Package</a>
+        <a class="cta cta-filled" href="mailto:floydie@44social.co?subject=Royal%20has%20selected%20Growth%20SMM&body=Royal%20Landscape%20Nursery%20has%20selected%20Option%20B%3A%20Growth%20SMM%20%E2%80%94%20%244%2C250%2Fmo%0A3-month%20initial%20term%0A%0APACKAGE%20INCLUDES%3A%0A%0A-%2020%20production%20credits%20per%20month%20%282x%20Starter%20output%29%0A-%204%20posts%20per%20week%20per%20platform%20%28Instagram%20%2B%20Facebook%29%0A-%205%20hours%2Fweek%20community%20management%0A-%20Monthly%20content%20calendar%20and%20strategy%0A-%20Posting%20and%20scheduling%20handled%20by%2044%20Social%0A-%20More%20room%20for%20reels%2C%20carousels%2C%20and%20seasonal%20campaigns%0A-%20Smart%20repurposing%20of%20new%20and%20archive%20content%0A-%20Monthly%20performance%20report%0A-%20Quarterly%20strategy%20review%0A-%20Dedicated%20account%20ownership%0A-%20Full%20Architects%20AI%20stack%20and%20client%20portal%20access%0A%0A----%0ASent%20via%2044%20Social%20Proposal">Select This Package</a>
       </div>
 
     </div>
